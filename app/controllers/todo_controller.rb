@@ -6,6 +6,6 @@ class TodoController < ApplicationController
     def show
         @todo_description = "Description of todo"
         @todo_pomodoro = "Amount of pomodoros necessary for task"
-        
+        @id = params[:id]
     end
 end
