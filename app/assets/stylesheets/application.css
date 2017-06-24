@@ -1,3 +1,18 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
 h2 {
     font-family:'Roboto', sans serif;
 color: #6385BE;
@@ -83,4 +98,40 @@ body {
 
 .intline{
   text-decoration: line-through;
+}
+
+/*Show Page Html */
+
+body {
+    background-color:#b5e3f7;
+}
+
+h3 {
+    font-family: 'Roboto', sans serif;
+    text-align: center;
+    color: #6385BE;
+}
+
+#info {
+    height: 400px;
+    width: 600px;
+    border: 2px solid;
+    border-style: ridge;
+    border-color: #fabcb8;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 5px 5px #767491;
+    margin: 20px;
+    
+}
+
+#date{
+    font-size: 24px;
+    font-family: "Cuprum", sans serif;
+}
+
+.resourcebutton{
+    text-decoration: none;
+    border: none;
+    background-color: #FFFFFF;
 }
