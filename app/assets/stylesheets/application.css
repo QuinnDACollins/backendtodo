@@ -1,15 +1,86 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+h2 {
+    font-family:'Roboto', sans serif;
+color: #6385BE;
+}
+
+.righty{
+    text-align:right;
+}
+
+#centy{
+    text-align:center;
+}
+
+#Boxo {
+    border: 5px;
+    background-color:#F1F5FF;
+    border-style: groove;
+    border-color: #fabcb8;
+    box-shadow: 10px 5px 5px #767491;
+    padding-bottom: 35px;
+    margin: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.logo{
+    width: 10%;
+    
+    display: block;
+    margin: auto;
+}
+
+ul li {
+  
+ 
+    font-family: 'PT Sans Caption', sans serif;
+    font-size: 24px;
+ text-align: center;
+ list-style-type: none;
+ color: #313641;
+}
+
+ul {
+   display: flex;
+  align-items: center;
+}
+
+li{
+
+    height: 100px;
+      border-right: 2px solid;
+      border-width:10px;
+      border-radius: 3px;
+      
+    border-color: #000000;
+    margin-right: 25px;
+    padding:  25px;
+  
+}
+
+li:hover{
+    color: white;
+ text-shadow: 2px 2px 2px #000000;
+}
+
+#todoform{
+
+    margin-left: 40%;
+   /* display:block; */
+}
+
+body {
+    background-color:#b5e3f7;
+}
+
+.Pomo{
+    
+    border: 0px solid;
+    border-style: groove;
+    border-color: #FFFFFF;
+}
+
+
+.intline{
+  text-decoration: line-through;
+}
