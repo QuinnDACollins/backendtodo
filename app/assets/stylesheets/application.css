@@ -135,3 +135,15 @@ h3 {
     border: none;
     background-color: #FFFFFF;
 }
+
+#descbox{
+     height: 400px;
+    width: 600px;
+    border: 2px solid;
+    border-style: ridge;
+    border-color: #fabcb8;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 5px 5px #767491;
+    margin: 20px;
+}
