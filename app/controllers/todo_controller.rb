@@ -23,4 +23,6 @@ class TodoController < ApplicationController
         # @todo_description = "Take out the trash it stinks."
      #   end
     end
+    def new
+    end
 end

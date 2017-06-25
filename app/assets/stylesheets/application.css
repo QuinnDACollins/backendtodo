@@ -147,3 +147,12 @@ h3 {
     box-shadow: 5px 5px #767491;
     margin: 20px;
 }
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: none;
+}
