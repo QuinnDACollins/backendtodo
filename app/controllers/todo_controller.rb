@@ -1,6 +1,6 @@
 class TodoController < ApplicationController
     def index
-     @math = 5+5
+     @todos =  Todo.all
     end
     
     def show
@@ -50,6 +50,13 @@ class TodoController < ApplicationController
     def destroy
         t = Todo.find(params[:id])
         t.destroy
-        redirect_to "/todo/index/"
+        redirect_to "/todo/index"
     end
+    
+    def completion
+        t = Todo.find(params[:id])
+        t.complete = true
+        t.save
+        redirect_to root_path
+    end 
 end

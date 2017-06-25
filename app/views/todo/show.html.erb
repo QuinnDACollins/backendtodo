@@ -9,7 +9,10 @@
 <a href="/todo/edit/<%=@todo.id%>">
   <input type="submit" value="Edit">
   </a>
-  <input type="submit" value="Delete">
+  <a href="/todo/destroy/<%=@todo.id%>">
+     <input type="submit" value="Delete">
+  </a>
+     
   </div>
   <a href="/todo/index">Home</a>
   

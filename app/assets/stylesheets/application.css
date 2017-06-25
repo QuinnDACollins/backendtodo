@@ -63,11 +63,11 @@ ul {
 li{
 
     height: 100px;
-      border-right: 2px solid;
-      border-width:10px;
+      border-right: 1px solid;
+      border-width:3px;
       border-radius: 3px;
       
-    border-color: #000000;
+    border-color: #778899	;
     margin-right: 25px;
     padding:  25px;
   
@@ -90,7 +90,7 @@ body {
 
 .Pomo{
     
-    border: 0px solid;
+    border: 3px solid;
     border-style: groove;
     border-color: #FFFFFF;
 }
@@ -155,4 +155,8 @@ a {
 
 a:hover{
     text-decoration: none;
+}
+
+.completed{
+    background-color: #b2ffb2;
 }

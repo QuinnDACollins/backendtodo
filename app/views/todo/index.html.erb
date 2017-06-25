@@ -1,34 +1,43 @@
 <div id="Boxo">
+    
         <h2 id="centy">
             To Do List
         </h2>
         <img class="logo" src = "http://ww1.prweb.com/prfiles/2015/08/24/13706165/codenow%20logo%20large.png" title="codenow logo">
 
         <ul>
-           <a href="show/1"  style="text-decoration: none;"> <li><input type="checkbox">Study for Geometry Quiz  <span>[Pomodoro Time]</span></li></a>
-    
-            <li>
-                <input type="checkbox">
-               <a href="show/2"> Feed Cat</a>  
-                <span class="Pomo">[Pomodoro Time]</span>
-            </li>
-            <li>
-                <input type="checkbox">
-                <a href="show/3">Sleep  </a>
-                <span class="Pomo">[Pomodoro Time]</span>
-            </li>
-            <li>
-                <input type="checkbox">
-               <a href="show/4"> Finish Processing Game  </a>
-                <span class="Pomo">[Pomodoro Time]</span>
-            </li>
-            
-              <li>
-                <input type="checkbox">
-               <a href="show/5"> Take out the trash  </a>
-                <span class="Pomo">[Pomodoro Time]</span>
-            </li>
+           <!--<a href="show/1"  style="text-decoration: none;"> -->
+           <!--<li>-->
+           <!--    <input type="checkbox">Study for Geometry Quiz -->
+           <!--<span>[Pomodoro Time]</span>-->
+           
+           
+           <!--</li>-->
+           <!--</a>-->
+            <%@todos.each do |todo|%>
+             <li>
+                <a href="/todo/completion/<%= todo.id%>">
+               <input type="checkbox">
+               </a>
+              <%if todo.complete == true %>
+               <span class="completed">
+                   <a href="/todo/show/<%= todo.id%>"><%= todo.description%>
+               </a>
+               </span>
+               <%else%>
+               
+               <span>
+                  <span class ="Pomo"><a  href="/todo/show/<%= todo.id%>"><%= todo.description%></span> 
+               </a>
+               </span>
+               <%end%>
+               
+               <span><%=todo.pomodoro_estimate%></span>
+         
+           </li>
+           <%end%>
         </ul>
+         
         </div>
        <a href="/todo/new">
            <input style="margin-left: 77px" type="submit" value ="New Todo">
