@@ -160,3 +160,7 @@ a:hover{
 .completed{
     background-color: #b2ffb2;
 }
+
+p{
+    margin: 10px;
+}
